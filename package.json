@@ -1,0 +1,14 @@
+{
+  "name": "postcss-plugins",
+  "version": "0.1.0-dev",
+  "private": true,
+  "repository": "git@github.com:ezavile/postcss-plugins.git",
+  "author": "Edgar Zavala <ezavile@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "3.22.1"
+  }
+}
