@@ -1,24 +1,27 @@
 {
   "name": "postcss-plugins",
   "version": "0.1.0-dev",
+  "license": "MIT",
   "private": true,
   "repository": "git@github.com:ezavile/postcss-plugins.git",
   "author": "Edgar Zavala <ezavile@gmail.com>",
-  "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
+  "dependencies": {
+    "postcss": "7.0.32"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.1.0",
     "@typescript-eslint/parser": "4.1.0",
     "eslint": "7.8.1",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
+    "format-package": "6.1.0",
+    "husky": "4.3.0",
     "lerna": "3.22.1",
+    "lint-staged": "10.3.0",
     "prettier": "2.1.1",
     "typescript": "4.0.2"
-  },
-  "dependencies": {
-    "postcss": "7.0.32"
   }
 }
