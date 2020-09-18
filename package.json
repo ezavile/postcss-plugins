@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "postcss": "7.0.32"
+    "postcss": "8.0.5"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.1.0",
