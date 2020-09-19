@@ -16,4 +16,5 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
+  ignorePatterns: ['build', '.*.js', '*.config.js', 'node_modules'],
 };
