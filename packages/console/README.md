@@ -1,11 +1,74 @@
 # `@postcss-plugins/console`
 
-> TODO: description
+A [PostCSS] plugin output messages to the terminal.
+
+## Installation
+
+```
+yarn add @postcss-plugins/console
+```
+
+What is this? For example, you have the following CSS file (I'm using [postcss-each], [postcss-text-transform] and [postcss-cssnext]):
+
+**backgrounds.css**
+
+```css
+.u {
+  @console.warn Here comes the postcss-console plugin;
+  @each $color in green, yellow, red {
+    @console.assert '$color' == 'green';
+    @text-transform $color, upperFirst, $colorTransformed {
+      @console.log the text was transformed from $color to $colorTransformed;
+      &-bg$(colorTransformed) {
+        background-color: $color;
+      }
+    }
+  }
+  @console.error This is an error message;
+}
+```
+
+And the plugin will give you:
+
+![console](/packages/console/console.png?raw=true 'Messages on terminal')
 
 ## Usage
 
-```
-const console = require('@postcss-plugins/console');
+### JavaScript
 
-// TODO: DEMONSTRATE API
+Put this plugin after all plugins
+
+```javascript
+postcss([require('other-plugin'), require('postcss-console')]);
 ```
+
+## Methods
+
+```css
+@console.log This is an informative message
+@console.warn This is a warn message
+@console.error This is an error message
+@console.assert Boolean expression;
+```
+
+## Testing
+
+```javascript
+yarn test
+```
+
+See [PostCSS] docs for examples for your environment.
+
+## Contributing
+
+- ⇄ Pull requests and ★ Stars are always welcome.
+- For bugs and feature requests, please create an issue.
+- Pull requests must be accompanied by passing automated tests (`yarn test`).
+
+[MIT License]
+
+[postcss]: https://github.com/postcss/postcss
+[postcss-each]: https://github.com/outpunk/postcss-each
+[postcss-text-transform]: https://github.com/ezavile/postcss-text-transform
+[postcss-cssnext]: https://github.com/MoOx/postcss-cssnext
+[mit license]: https://github.com/ezavile/postcss-console/blob/master/LICENSE
