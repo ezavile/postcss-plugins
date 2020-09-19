@@ -1,0 +1,46 @@
+{
+  "name": "@postcss-plugins/console",
+  "version": "0.1.0",
+  "description": "A PostCSS plugin to output messages to the terminal.",
+  "license": "MIT",
+  "repository": {
+    "directory": "packages/console",
+    "type": "git",
+    "url": "git+https://github.com/ezavile/postcss-plugins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ezavile/postcss-plugins/issues"
+  },
+  "homepage": "https://github.com/ezavile/postcss-plugins#readme",
+  "author": "Edgar Zavala <ezavile@gmail.com>",
+  "keywords": [
+    "@postcss",
+    "@postcss-plugins",
+    "postcss",
+    "postcss-plugins",
+    "console",
+    "debug",
+    "log",
+    "terminal"
+  ],
+  "main": "dist/plugin.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc -b ./tsconfig.production.json",
+    "lint": "eslint --ext .ts src --color",
+    "test": "jest"
+  },
+  "dependencies": {
+    "colors": "1.4.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.5"
+  },
+  "devDependencies": {
+    "postcss-each": "0.10.0",
+    "postcss-text-transform": "2.0.0"
+  }
+}
