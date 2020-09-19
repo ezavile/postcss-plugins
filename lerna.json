@@ -3,11 +3,15 @@
   "command": {
     "init": {
       "exact": true
+    },
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore: publish",
+      "allowBranch": "master",
+      "registry": "https://registry.npmjs.org"
     }
   },
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "version": "independent",
   "useWorkspaces": true
 }

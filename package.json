@@ -8,6 +8,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "release": "lerna publish --amend"
+  },
   "dependencies": {
     "postcss": "8.0.5"
   },
