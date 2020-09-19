@@ -23,14 +23,14 @@
     "log",
     "terminal"
   ],
-  "main": "dist/console.js",
+  "main": "dist/plugin.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc -b ./tsconfig.production.json",
-    "lint": "eslint --ext .ts,.tsx src --color",
+    "lint": "eslint --ext .ts src --color",
     "test": "jest"
   },
   "dependencies": {
