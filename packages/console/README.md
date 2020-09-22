@@ -30,7 +30,7 @@ What is this? For example, you have the following CSS file (I'm using [postcss-e
 
 And the plugin will give you:
 
-![console](/packages/console/console.png?raw=true 'Messages on terminal')
+![console](https://github.com/ezavile/postcss-plugins/blob/master/packages/console/console.png?raw=true 'Messages on terminal')
 
 ## Usage
 
@@ -39,7 +39,7 @@ And the plugin will give you:
 Put this plugin after all plugins
 
 ```javascript
-postcss([require('other-plugin'), require('postcss-console')]);
+postcss([require('other-plugin'), require('@postcss-plugins/console')]);
 ```
 
 ## Methods
