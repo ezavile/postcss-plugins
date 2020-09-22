@@ -21,4 +21,4 @@ const plugin = (): postcss.Plugin => {
 
 plugin.postcss = true;
 
-export default plugin;
+export = plugin;
