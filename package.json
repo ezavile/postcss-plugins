@@ -12,7 +12,7 @@
     "release": "lerna publish --amend"
   },
   "dependencies": {
-    "postcss": "8.0.5"
+    "postcss": "8.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
