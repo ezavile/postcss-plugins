@@ -1,6 +1,6 @@
 {
   "name": "@postcss-plugins/console",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A PostCSS plugin to output messages to the terminal.",
   "license": "MIT",
   "repository": {

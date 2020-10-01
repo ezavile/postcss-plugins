@@ -69,6 +69,6 @@ See [PostCSS] docs for examples for your environment.
 
 [postcss]: https://github.com/postcss/postcss
 [postcss-each]: https://github.com/outpunk/postcss-each
-[postcss-text-transform]: https://github.com/ezavile/postcss-plugins/tree/master/packages/text-transform
+[@postcss-plugins/text-transform]: https://github.com/ezavile/postcss-plugins/tree/master/packages/text-transform
 [postcss-cssnext]: https://github.com/MoOx/postcss-cssnext
 [mit license]: https://github.com/ezavile/postcss-plugins/blob/master/packages/console/LICENSE
