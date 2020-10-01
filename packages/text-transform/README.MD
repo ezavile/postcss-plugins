@@ -1,0 +1,85 @@
+# `@postcss-plugins/text-transform`
+
+A [PostCSS] plugin to transform the text.
+
+## Installation
+
+```
+yarn add @postcss-plugins/text-transform
+```
+
+What is this? For example, you have the following CSS file (I'm using [postcss-each] and [postcss-cssnext]):
+
+**backgrounds.css**
+
+```css
+.u {
+  @each $color in green, yellow, red {
+    @text-transform $color, upperFirst, $transformed {
+      &-bg$(transformed) {
+        background-color: $color;
+      }
+    }
+  }
+}
+```
+
+And the plugin will give you:
+
+```css
+.u-bgGreen {
+  background-color: green;
+}
+
+.u-bgYellow {
+  background-color: yellow;
+}
+
+.u-bgRed {
+  background-color: red;
+}
+```
+
+## Usage
+
+### JavaScript
+
+```javascript
+postcss([require('@postcss-plugins/text-transform')]);
+```
+
+```css
+@text-transform $text, transformation, $textTransformed {
+}
+```
+
+**Transformations**
+
+- camelCase - Converts to camel case.
+- capitalize - Converts the first character of string to upper case and the remaining to lower case.
+- lowerCase - Converts string, as space separated words, to lower case.
+- lowerFirst - Converts the first character of string to lower case.
+- pascalCase - Converts to pascal case.
+- upperCase - Converts string, as space separated words, to upper case.
+- upperFirst - Converts the first character of string to upper case.
+
+## Testing
+
+This will build scripts, run tests and generate a code coverage report. Anything less than 100% coverage will throw an error.
+
+```javascript
+yarn test
+```
+
+## Contributing
+
+- ⇄ Pull requests and ★ Stars are always welcome.
+- For bugs and feature requests, please create an issue.
+- Pull requests must be accompanied by passing automated tests (`yarn test`).
+
+[MIT License]
+
+[postcss]: https://github.com/postcss/postcss
+[postcss-each]: https://github.com/outpunk/postcss-each
+[postcss-cssnext]: https://github.com/MoOx/postcss-cssnext
+[mit license]: https://github.com/ezavile/postcss-plugins/blob/master/packages/text-transform/LICENSE
