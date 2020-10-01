@@ -40,7 +40,7 @@
     "postcss": "^8.1.0"
   },
   "devDependencies": {
-    "postcss-each": "0.10.0",
-    "postcss-text-transform": "2.0.0"
+    "@postcss-plugins/text-transform": "0.1.0",
+    "postcss-each": "0.10.0"
   }
 }

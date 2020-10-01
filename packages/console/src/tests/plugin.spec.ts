@@ -10,7 +10,7 @@ it('should output the log, warn, error and asserts', async () => {
 
   const result = await postcss([
     require('postcss-each'),
-    require('postcss-text-transform'),
+    require('@postcss-plugins/text-transform'),
     plugin(),
   ]).process(cssContent, { from: cssFile });
 
