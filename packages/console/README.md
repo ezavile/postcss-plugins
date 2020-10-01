@@ -8,7 +8,7 @@ A [PostCSS] plugin output messages to the terminal.
 yarn add @postcss-plugins/console
 ```
 
-What is this? For example, you have the following CSS file (I'm using [postcss-each], [postcss-text-transform] and [postcss-cssnext]):
+What is this? For example, you have the following CSS file (I'm using [postcss-each], [@postcss-plugins/text-transform] and [postcss-cssnext]):
 
 **backgrounds.css**
 
@@ -17,9 +17,9 @@ What is this? For example, you have the following CSS file (I'm using [postcss-e
   @console.warn Here comes the postcss-console plugin;
   @each $color in green, yellow, red {
     @console.assert '$color' == 'green';
-    @text-transform $color, upperFirst, $colorTransformed {
-      @console.log the text was transformed from $color to $colorTransformed;
-      &-bg$(colorTransformed) {
+    @text-transform $color, upperFirst, $transformed {
+      @console.log the text was transformed from $color to $transformed;
+      &-bg$(transformed) {
         background-color: $color;
       }
     }
@@ -69,6 +69,6 @@ See [PostCSS] docs for examples for your environment.
 
 [postcss]: https://github.com/postcss/postcss
 [postcss-each]: https://github.com/outpunk/postcss-each
-[postcss-text-transform]: https://github.com/ezavile/postcss-text-transform
+[postcss-text-transform]: https://github.com/ezavile/postcss-plugins/tree/master/packages/text-transform
 [postcss-cssnext]: https://github.com/MoOx/postcss-cssnext
-[mit license]: https://github.com/ezavile/postcss-console/blob/master/LICENSE
+[mit license]: https://github.com/ezavile/postcss-plugins/blob/master/packages/console/LICENSE
