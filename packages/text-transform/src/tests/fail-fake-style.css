@@ -1,0 +1,9 @@
+.componentName {
+  @each $color in green, yellow, red {
+    @text-transform $color, fakeTransformation, $colorTransformed {
+      &-bg$(colorTransformed) {
+        background-color: $color;
+      }
+    }
+  }
+}

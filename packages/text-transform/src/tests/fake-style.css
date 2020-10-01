@@ -1,0 +1,9 @@
+.componentNameCapitalize {
+  @each $color in green, yellow, red {
+    @text-transform $color, capitalize, $transformedColor {
+      &-bg$(transformedColor) {
+        background-color: $color;
+      }
+    }
+  }
+}
