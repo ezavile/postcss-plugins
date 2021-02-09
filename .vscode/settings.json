@@ -9,5 +9,10 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "eslint.workingDirectories": [{ "mode": "auto" }]
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "conventionalCommits.scopes": ["text-transform", "console"]
 }
