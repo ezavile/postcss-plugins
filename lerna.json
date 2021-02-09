@@ -6,7 +6,7 @@
     },
     "publish": {
       "conventionalCommits": true,
-      "message": "chore: publish",
+      "message": "chore: :rocket: publish",
       "allowBranch": "master",
       "registry": "https://registry.npmjs.org"
     }

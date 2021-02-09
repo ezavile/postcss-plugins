@@ -1,6 +1,6 @@
 {
   "name": "@postcss-plugins/console",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A PostCSS plugin to output messages to the terminal.",
   "license": "MIT",
   "repository": {
@@ -40,7 +40,7 @@
     "postcss": "^8.1.0"
   },
   "devDependencies": {
-    "@postcss-plugins/text-transform": "0.1.0",
+    "@postcss-plugins/text-transform": "^0.1.1",
     "postcss-each": "0.10.0"
   }
 }

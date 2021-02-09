@@ -1,6 +1,6 @@
 {
   "name": "@postcss-plugins/text-transform",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A PostCSS plugin to transform the text.",
   "license": "MIT",
   "repository": {
@@ -39,8 +39,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "camelcase": "6.0.0",
-    "postcss-simple-vars": "6.0.1"
+    "camelcase": "6.2.0",
+    "postcss-simple-vars": "6.0.3"
   },
   "peerDependencies": {
     "postcss": "^8.1.0"
