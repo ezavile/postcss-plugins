@@ -9,10 +9,13 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "lerna run build",
+    "lint": "lerna run lint",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
-    "release": "lerna publish --amend"
+    "release": "lerna publish --amend",
+    "test": "lerna run test"
   },
   "dependencies": {
     "postcss": "8.1.0"
