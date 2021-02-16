@@ -4,7 +4,8 @@
     "baseUrl": "src",
     "outDir": "dist",
     "rootDir": "src",
-    "noEmit": false
+    "noEmit": false,
+    "declaration": true
   },
   "include": ["src"],
   "exclude": ["src/tests"]

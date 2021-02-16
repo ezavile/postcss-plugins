@@ -1,7 +1,6 @@
 # `@postcss-plugins/typescript-css`
 
 [![npm](https://img.shields.io/npm/v/@postcss-plugins/typescript-css.svg?style=flat-square)](https://www.npmjs.com/package/@postcss-plugins/typescript-css)
-[![MIT License](https://img.shields.io/npm/l/@postcss-plugins/typescript-css.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 A [PostCSS] plugin to create a TypeScript file by each CSS file.
 

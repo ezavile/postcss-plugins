@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/ezavile/postcss-plugins/compare/@postcss-plugins/typescript-css@0.1.0...@postcss-plugins/typescript-css@0.1.1) (2021-02-16)
+
+
+### Bug Fixes
+
+* **typescript-css:** add missing definition type ([92d99ba](https://github.com/ezavile/postcss-plugins/commit/92d99bad2c7c4519202b6aee3af0c36f4f61d65e))
+
+
+
+
+
 # 0.1.0 (2021-02-16)
 
 
