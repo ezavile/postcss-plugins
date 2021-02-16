@@ -1,0 +1,40 @@
+.Card {
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px,
+    rgba(0, 0, 0, 0.117647) 0 1px 4px;
+  border-radius: 2px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  &-header {
+    background-color: rgba(232, 232, 232, 0.4);
+    padding: 2rem;
+  }
+
+  &-content {
+    padding: 0 2rem 2rem;
+
+    &-code {
+      padding: 16px;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #f6f8fa;
+      border-radius: 3px;
+    }
+
+    &-reserverd-word-ts {
+      color: #a71d5d;
+    }
+
+    &-string-ts {
+      color: #183691;
+    }
+
+    &-classname-css {
+      color: #795da3;
+    }
+
+    &-attr-ts {
+      color: #0086b3;
+    }
+  }
+}

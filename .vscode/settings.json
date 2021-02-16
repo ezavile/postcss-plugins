@@ -14,5 +14,5 @@
       "mode": "auto"
     }
   ],
-  "conventionalCommits.scopes": ["text-transform", "console"]
+  "conventionalCommits.scopes": ["text-transform", "console", "typescript-css"]
 }

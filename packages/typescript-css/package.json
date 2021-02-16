@@ -1,0 +1,47 @@
+{
+  "name": "@postcss-plugins/typescript-css",
+  "version": "0.1.0",
+  "description": "PostCSS plugin to create a typescript file definition by each CSS file",
+  "license": "MIT",
+  "repository": {
+    "directory": "packages/typescript-css",
+    "type": "git",
+    "url": "git+https://github.com/ezavile/postcss-plugins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ezavile/postcss-plugins/issues"
+  },
+  "homepage": "https://github.com/ezavile/postcss-plugins/tree/master/packages/typescript-css#readme",
+  "author": "Edgar Zavala <ezavile@gmail.com>",
+  "keywords": [
+    "@postcss",
+    "@postcss-plugins",
+    "postcss",
+    "postcss-plugins",
+    "typescript",
+    "css",
+    "classnames"
+  ],
+  "main": "dist/plugin.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc -b ./tsconfig.production.json",
+    "lint": "eslint --ext .ts src --color",
+    "pretest": "rimraf src/tests/card.style.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "camelcase": "6.2.0",
+    "postcss-selector-parser": "6.0.4",
+    "prettier": "2.2.1"
+  },
+  "peerDependencies": {
+    "postcss": "^8.1.0"
+  },
+  "devDependencies": {
+    "postcss-nested": "5.0.3"
+  }
+}
