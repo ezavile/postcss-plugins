@@ -33,6 +33,7 @@
     "pretest": "rimraf src/tests/card.style.ts",
     "test": "jest"
   },
+  "types": "dist/plugin.d.ts",
   "dependencies": {
     "camelcase": "6.2.0",
     "postcss-selector-parser": "6.0.4",
