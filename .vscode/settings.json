@@ -14,5 +14,10 @@
       "mode": "auto"
     }
   ],
-  "conventionalCommits.scopes": ["text-transform", "console", "typescript-css"]
+  "conventionalCommits.scopes": [
+    "text-transform",
+    "console",
+    "typescript-css",
+    "token-utility"
+  ]
 }
