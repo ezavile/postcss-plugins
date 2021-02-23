@@ -33,6 +33,7 @@
     "lint": "eslint --ext .ts src --color",
     "test": "jest"
   },
+  "types": "dist/plugin.d.ts",
   "dependencies": {
     "colors": "1.4.0"
   },
