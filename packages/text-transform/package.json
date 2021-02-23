@@ -38,6 +38,7 @@
     "lint": "eslint --ext .ts src --color",
     "test": "jest"
   },
+  "types": "dist/plugin.d.ts",
   "dependencies": {
     "camelcase": "6.2.0",
     "postcss-simple-vars": "6.0.3"
