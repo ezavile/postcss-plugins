@@ -1,0 +1,12 @@
+.leading-1x {
+  line-height: 1.2 !important;
+}
+.leading-2x {
+  line-height: 1.5 !important;
+}
+.leading-3x {
+  line-height: 1.7 !important;
+}
+.custom-class {
+  line-height: 1.7;
+}

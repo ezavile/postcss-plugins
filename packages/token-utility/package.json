@@ -1,0 +1,47 @@
+{
+  "name": "@postcss-plugins/token-utility",
+  "version": "0.0.0",
+  "description": "A PostCSS plugin to generate design tokens utilities.",
+  "license": "MIT",
+  "repository": {
+    "directory": "packages/token-utility",
+    "type": "git",
+    "url": "git+https://github.com/ezavile/postcss-plugins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ezavile/postcss-plugins/issues"
+  },
+  "homepage": "https://github.com/ezavile/postcss-plugins/tree/master/packages/token-utility#readme",
+  "author": "Edgar Zavala <ezavile@gmail.com>",
+  "keywords": [
+    "@postcss",
+    "@postcss-plugins",
+    "postcss",
+    "postcss-plugins",
+    "design",
+    "tokens",
+    "design tokens",
+    "style dictionary",
+    "style guide",
+    "css utilities",
+    "css utility"
+  ],
+  "main": "dist/plugin.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc -b ./tsconfig.production.json",
+    "lint": "eslint --ext .ts src --color",
+    "test": "jest"
+  },
+  "types": "dist/plugin.d.ts",
+  "dependencies": {
+    "camelcase": "6.2.0",
+    "postcss-simple-vars": "6.0.3"
+  },
+  "peerDependencies": {
+    "postcss": "^8.1.0"
+  }
+}
