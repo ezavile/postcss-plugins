@@ -1,6 +1,6 @@
 {
   "name": "@postcss-plugins/console",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A PostCSS plugin to output messages to the terminal.",
   "license": "MIT",
   "repository": {
@@ -33,6 +33,7 @@
     "lint": "eslint --ext .ts src --color",
     "test": "jest"
   },
+  "types": "dist/plugin.d.ts",
   "dependencies": {
     "colors": "1.4.0"
   },
@@ -40,7 +41,7 @@
     "postcss": "^8.1.0"
   },
   "devDependencies": {
-    "@postcss-plugins/text-transform": "^0.1.1",
+    "@postcss-plugins/text-transform": "^0.1.2",
     "postcss-each": "0.10.0"
   }
 }

@@ -1,0 +1,21 @@
+.ez-text-red-50 {
+  color: #ec1b49 !important;
+}
+.ez-text-green-50 {
+  color: #14d0a6 !important;
+}
+.ez-text-blue-50 {
+  color: #0056ff !important;
+}
+.ez-bg-red-50 {
+  background-color: #ec1b49 !important;
+}
+.ez-bg-green-50 {
+  background-color: #14d0a6 !important;
+}
+.ez-bg-blue-50 {
+  background-color: #0056ff !important;
+}
+.custom-class {
+  color: #ec1b49;
+}

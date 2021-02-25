@@ -1,0 +1,16 @@
+.ez-text-small {
+  font-size: 12px !important;
+}
+.ez-text-medium {
+  font-size: 14px !important;
+}
+.ez-text-large {
+  font-size: 16px !important;
+}
+.ez-font-main {
+  font-family: 'roboto' !important;
+}
+.custom-class {
+  font-family: 'roboto';
+  font-size: 16px;
+}

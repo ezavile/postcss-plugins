@@ -1,6 +1,8 @@
 # `@postcss-plugins/console`
 
-A [PostCSS] plugin output messages to the terminal.
+[![npm](https://img.shields.io/npm/v/@postcss-plugins/console.svg?style=flat-square)](https://www.npmjs.com/package/@postcss-plugins/console)
+
+A [PostCSS] plugin to output messages to the terminal.
 
 ## Installation
 
@@ -34,9 +36,7 @@ And the plugin will give you:
 
 ## Usage
 
-### JavaScript
-
-Put this plugin after all plugins
+Put this plugin after all plugins.
 
 ```javascript
 postcss([require('other-plugin'), require('@postcss-plugins/console')]);
@@ -57,13 +57,10 @@ postcss([require('other-plugin'), require('@postcss-plugins/console')]);
 yarn test
 ```
 
-See [PostCSS] docs for examples for your environment.
-
 ## Contributing
 
 - ⇄ Pull requests and ★ Stars are always welcome.
 - For bugs and feature requests, please create an issue.
-- Pull requests must be accompanied by passing automated tests (`yarn test`).
 
 [MIT License]
 

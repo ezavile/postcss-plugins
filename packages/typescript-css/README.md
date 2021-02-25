@@ -26,9 +26,9 @@ What is this? For example, you have the following CSS file:
 }
 ```
 
-And the plugin will give you a TypeScript file in the same location where the CSS file is. This file generated has almost the same name, only it's added "Style" at the end of the original name of your CSS file, example:
+And the plugin will give you a TypeScript file in the same location where the CSS file is. This file generated has almost the same name, only it's added ".style.ts", example:
 
-**componentNameStyle.ts**
+**componentName.style.ts**
 
 ```javascript
 export const componentNameStyle = {
@@ -44,7 +44,7 @@ So, you can import the TypeScript file
 
 ```javascript
 import './componentName.css';
-import { componentNameStyle } from './componentNameStyle';
+import { componentNameStyle } from './componentName.style';
 
 const element = document.createElement('div');
 element.className = componentNameStyle.componentName;

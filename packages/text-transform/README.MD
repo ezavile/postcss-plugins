@@ -1,5 +1,7 @@
 # `@postcss-plugins/text-transform`
 
+[![npm](https://img.shields.io/npm/v/@postcss-plugins/text-transform.svg?style=flat-square)](https://www.npmjs.com/package/@postcss-plugins/text-transform)
+
 A [PostCSS] plugin to transform the text.
 
 ## Installation
@@ -42,14 +44,15 @@ And the plugin will give you:
 
 ## Usage
 
-### JavaScript
-
 ```javascript
 postcss([require('@postcss-plugins/text-transform')]);
 ```
 
 ```css
-@text-transform $text, transformation, $textTransformed {
+@text-transform $color, transformation, $textTransformed {
+  .u-bg$(transformed) {
+    background-color: $color;
+  }
 }
 ```
 
@@ -65,8 +68,6 @@ postcss([require('@postcss-plugins/text-transform')]);
 
 ## Testing
 
-This will build scripts, run tests and generate a code coverage report. Anything less than 100% coverage will throw an error.
-
 ```javascript
 yarn test
 ```
@@ -75,7 +76,6 @@ yarn test
 
 - ⇄ Pull requests and ★ Stars are always welcome.
 - For bugs and feature requests, please create an issue.
-- Pull requests must be accompanied by passing automated tests (`yarn test`).
 
 [MIT License]
 
