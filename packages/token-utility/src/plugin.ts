@@ -1,38 +1,75 @@
 import * as postcss from 'postcss';
+import vars from 'postcss-simple-vars';
 
 import { TokenUtilityProps } from './model';
-
-import vars from 'postcss-simple-vars';
+import { getRule } from './utils';
 
 const plugin = ({
   prefix = '',
   colors = {},
   spacing = {},
-  font = { family: [], sizes: {} },
   leading = {},
+  font = { family: {}, sizes: {} },
 }: Partial<TokenUtilityProps>): postcss.Plugin => {
   return {
     postcssPlugin: 'postcss-token-utility',
     OnceExit: (root: postcss.Root, helpers) => {
       const base = `${prefix ? `${prefix}-` : ''}`;
       const variables: { [key in string]: string } = {};
-      let content = '';
 
-      Object.keys(colors).forEach((key) => {
-        content += `
-            .${base}text-${key} {
-              color: ${colors[key]} !important;
-            }
-            .${base}bg-${key} {
-              background-color: ${colors[key]} !important;
-            }
-         `;
+      const utils = [
+        {
+          selector: `${base}text`,
+          prop: 'color',
+          values: colors,
+          variableName: `${base}color`,
+        },
+        {
+          selector: `${base}bg`,
+          prop: 'background-color',
+          values: colors,
+          variableName: `${base}color`,
+        },
+        {
+          selector: `${base}text`,
+          prop: 'font-size',
+          values: font.sizes || {},
+        },
+        {
+          selector: `${base}font`,
+          prop: 'font-family',
+          values: Object.fromEntries(
+            Object.keys(font.family || {}).map((k) => [
+              k,
+              `'${(font.family || {})[k]}'`,
+            ])
+          ),
+        },
+        {
+          selector: `${base}leading`,
+          prop: 'line-height',
+          values: leading,
+        },
+      ].map((token) => {
+        return Object.keys(token.values).map((key) => {
+          const variableName = token.variableName || token.selector;
+          variables[`${variableName}-${key}`] = token.values[key];
 
-        variables[`${base}color-${key}`] = colors[key];
+          return getRule({
+            selector: `.${token.selector}-${key}`,
+            prop: token.prop,
+            value: token.values[key],
+          });
+        });
       });
 
+      const attributes = ['margin', 'padding'];
+      const sides = ['top', 'right', 'bottom', 'left'];
+
+      let spacingUtils = '';
+
       Object.keys(spacing).forEach((key) => {
-        content += ['margin', 'padding'].reduce(
+        spacingUtils += attributes.reduce(
           (prevAttr, nextAttr) =>
             `${prevAttr}
               .${base}${nextAttr.charAt(0)}-${key} {
@@ -41,10 +78,10 @@ const plugin = ({
           ''
         );
 
-        content += `
-            ${['top', 'right', 'bottom', 'left'].reduce(
+        spacingUtils += `
+            ${sides.reduce(
               (prevSide, nextSide) =>
-                ['margin', 'padding'].reduce(
+                attributes.reduce(
                   (prevAttr, nextAttr) =>
                     `${prevAttr}
                     .${base}${nextAttr.charAt(0)}${nextSide.charAt(0)}-${key} {
@@ -59,37 +96,7 @@ const plugin = ({
         variables[`${base}spacing-${key}`] = spacing[key];
       });
 
-      font.family?.forEach((family) => {
-        content += `
-            .${base}font-${family} {
-              font-family: '${family}' !important;
-            }
-          `;
-
-        variables[`${base}font-${family}`] = family;
-      });
-
-      Object.keys(font.sizes).forEach((key) => {
-        content += `
-            .${base}text-${key} {
-              font-size: ${font.sizes[key]} !important;
-            }
-          `;
-
-        variables[`${base}text-${key}`] = font.sizes[key];
-      });
-
-      Object.keys(leading).forEach((key) => {
-        content += `
-            .${base}leading-${key} {
-              line-height: ${leading[key]} !important;
-            }
-          `;
-
-        variables[`${base}leading-${key}`] = leading[key];
-      });
-
-      root.prepend(content);
+      root.prepend(...utils, spacingUtils);
 
       const processor = helpers.postcss([vars({ variables })]);
       processor.process(root).root;

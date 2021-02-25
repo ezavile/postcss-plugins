@@ -60,7 +60,9 @@ describe('postcss-token-utility', () => {
       {
         prefix: 'ez',
         font: {
-          family: ['roboto'],
+          family: {
+            main: 'roboto',
+          },
           sizes: {
             small: '12px',
             medium: '14px',
@@ -68,7 +70,7 @@ describe('postcss-token-utility', () => {
           },
         },
       },
-      `.custom-class { font-family: '$ez-font-roboto'; font-size: $ez-text-large; }`,
+      `.custom-class { font-family: $ez-font-main; font-size: $ez-text-large; }`,
       getOutput('font.css')
     );
   });
