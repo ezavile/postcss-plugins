@@ -24,7 +24,9 @@
     "style dictionary",
     "style guide",
     "css utilities",
-    "css utility"
+    "css utility",
+    "tailwindcss",
+    "utility-first"
   ],
   "main": "dist/plugin.js",
   "publishConfig": {
@@ -38,7 +40,6 @@
   },
   "types": "dist/plugin.d.ts",
   "dependencies": {
-    "camelcase": "6.2.0",
     "postcss-simple-vars": "6.0.3"
   },
   "peerDependencies": {
