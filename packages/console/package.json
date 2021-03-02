@@ -13,6 +13,13 @@
   },
   "homepage": "https://github.com/ezavile/postcss-plugins/tree/master/packages/console#readme",
   "author": "Edgar Zavala <ezavile@gmail.com>",
+  "contributors": [
+    {
+      "email": "andrey@sitnik.ru",
+      "name": "Andrey Sitnik",
+      "url": "https://sitnik.ru"
+    }
+  ],
   "keywords": [
     "@postcss",
     "@postcss-plugins",
