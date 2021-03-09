@@ -14,7 +14,7 @@
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
-    "release": "lerna publish --amend",
+    "release": "lerna publish",
     "test": "lerna run test"
   },
   "dependencies": {
