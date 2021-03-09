@@ -1,6 +1,6 @@
 {
   "name": "@postcss-plugins/console",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A PostCSS plugin to output messages to the terminal.",
   "license": "MIT",
   "repository": {
@@ -13,6 +13,13 @@
   },
   "homepage": "https://github.com/ezavile/postcss-plugins/tree/master/packages/console#readme",
   "author": "Edgar Zavala <ezavile@gmail.com>",
+  "contributors": [
+    {
+      "email": "andrey@sitnik.ru",
+      "name": "Andrey Sitnik",
+      "url": "https://sitnik.ru"
+    }
+  ],
   "keywords": [
     "@postcss",
     "@postcss-plugins",

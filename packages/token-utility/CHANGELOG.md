@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/ezavile/postcss-plugins/compare/@postcss-plugins/token-utility@0.1.0...@postcss-plugins/token-utility@0.1.1) (2021-03-09)
+
+
+### Bug Fixes
+
+* **token-utility:** :pushpin: add postcss as devDependencies ([7de9da3](https://github.com/ezavile/postcss-plugins/commit/7de9da32e730dc1ef799c99a6d77d4cbada566b6))
+
+
+
+
+
 # 0.1.0 (2021-02-25)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@postcss-plugins/token-utility",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A PostCSS plugin to generate design tokens utilities.",
   "license": "MIT",
   "repository": {
@@ -43,6 +43,9 @@
     "postcss-simple-vars": "6.0.3"
   },
   "peerDependencies": {
+    "postcss": "^8.1.0"
+  },
+  "devDependencies": {
     "postcss": "^8.1.0"
   }
 }
