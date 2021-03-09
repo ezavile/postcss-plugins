@@ -56,6 +56,7 @@ const plugin = ({
           variables[`${variableName}-${key}`] = token.values[key];
 
           return getRule({
+            Declaration: helpers.Declaration,
             selector: `.${token.selector}-${key}`,
             prop: token.prop,
             value: token.values[key],

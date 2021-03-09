@@ -1,15 +1,17 @@
 import * as postcss from 'postcss';
 
 export const getRule = ({
+  Declaration,
   selector,
   prop,
   value,
 }: {
+  Declaration: typeof postcss.Declaration;
   selector: string;
   prop: string;
   value: string;
 }): postcss.Rule => {
-  const declaration = new postcss.Declaration({
+  const declaration = new Declaration({
     prop,
     value,
   });
