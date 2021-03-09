@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/ezavile/postcss-plugins/compare/@postcss-plugins/token-utility@0.1.2...@postcss-plugins/token-utility@0.1.3) (2021-03-09)
+
+
+### Bug Fixes
+
+* **token-utility:** remove util and use classes from helper ([4bc5f68](https://github.com/ezavile/postcss-plugins/commit/4bc5f681bca8d49fcb64e97add5ebffe1fcf6e11))
+
+
+
+
+
 ## [0.1.2](https://github.com/ezavile/postcss-plugins/compare/@postcss-plugins/token-utility@0.1.1...@postcss-plugins/token-utility@0.1.2) (2021-03-09)
 
 
