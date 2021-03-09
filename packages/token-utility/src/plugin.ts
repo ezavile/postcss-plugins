@@ -2,7 +2,6 @@ import * as postcss from 'postcss';
 import vars from 'postcss-simple-vars';
 
 import { TokenUtilityProps } from './model';
-import { getRule } from './utils';
 
 const plugin = ({
   prefix = '',
@@ -55,12 +54,20 @@ const plugin = ({
           const variableName = token.variableName || token.selector;
           variables[`${variableName}-${key}`] = token.values[key];
 
-          return getRule({
-            Declaration: helpers.Declaration,
-            selector: `.${token.selector}-${key}`,
+          const declaration = new helpers.Declaration({
             prop: token.prop,
             value: token.values[key],
           });
+
+          declaration.important = true;
+
+          const rule = new helpers.Rule({
+            selector: `.${token.selector}-${key}`,
+          });
+
+          rule.append(declaration);
+
+          return rule;
         });
       });
 
