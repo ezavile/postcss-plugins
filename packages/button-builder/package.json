@@ -1,7 +1,7 @@
 {
   "name": "@postcss-plugins/button-builder",
   "version": "0.0.0",
-  "description": "A PostCSS plugin to generate custom button styles.",
+  "description": "A PostCSS plugin to generate custom button styles from given colors.",
   "license": "MIT",
   "repository": {
     "directory": "packages/button-builder",
@@ -15,7 +15,13 @@
   "author": "Edgar Zavala <ezavile@gmail.com>",
   "keywords": [
     "postcss",
-    "postcss-plugins"
+    "postcss-plugins",
+    "button generator",
+    "button styles",
+    "css utilities",
+    "css utility",
+    "tailwindcss",
+    "utility-first"
   ],
   "main": "dist/plugin.js",
   "publishConfig": {
@@ -28,10 +34,10 @@
     "test": "jest"
   },
   "types": "dist/plugin.d.ts",
-  "peerDependencies": {
-    "postcss": "^8.1.0"
-  },
   "dependencies": {
     "postcss-color-mod-function": "3.0.3"
+  },
+  "peerDependencies": {
+    "postcss": "^8.1.0"
   }
 }
