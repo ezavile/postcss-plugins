@@ -1,6 +1,6 @@
 {
   "name": "@postcss-plugins/button-builder",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A PostCSS plugin to generate custom button styles from given colors.",
   "license": "MIT",
   "repository": {
