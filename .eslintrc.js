@@ -16,5 +16,8 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
+  rules: {
+    '@typescript-eslint/ban-ts-comment': 'off',
+  },
   ignorePatterns: ['build', '.*.js', '*.config.js', 'node_modules'],
 };
