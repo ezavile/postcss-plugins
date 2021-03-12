@@ -1,0 +1,90 @@
+.ez-btn {
+  border: 1px solid transparent !important;
+  border-radius: 0.25rem !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  user-select: none !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5rem !important;
+}
+.ez-btn:disabled,
+.ez-btn-disabled {
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+}
+.ez-btn-block {
+  display: block !important;
+  width: 100% !important;
+}
+.ez-btn-radius-sm {
+  border-radius: 0.125rem !important;
+}
+.ez-btn-radius-md {
+  border-radius: 0.25rem !important;
+}
+.ez-btn-radius-lg {
+  border-radius: 0.375rem !important;
+}
+.ez-btn-radius-rounded {
+  border-radius: 9999px !important;
+}
+.ez-btn-sm {
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.75rem !important;
+  line-height: 1.25rem !important;
+}
+.ez-btn-md {
+  padding: 0.375rem 0.75rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5rem !important;
+}
+.ez-btn-lg {
+  padding: 0.5rem 1rem !important;
+  font-size: 1rem !important;
+  line-height: 1.75rem !important;
+}
+.ez-btn-solid-red {
+  background-color: #a61b3a !important;
+  outline-color: rgb(166, 0, 0) !important;
+}
+.ez-btn-solid-red:hover,
+.ez-btn-solid-red:active {
+  background-color: rgb(166, 27, 58) !important;
+}
+.ez-btn-outline-red {
+  background-color: transparent !important;
+  border-color: #a61b3a !important;
+  color: #a61b3a !important;
+  outline-color: rgb(166, 0, 0) !important;
+}
+.ez-btn-outline-red:hover,
+.ez-btn-outline-red:active {
+  background-color: #a61b3a !important;
+  color: #fff !important;
+}
+.ez-btn-stroke-red {
+  background-color: transparent !important;
+  border-color: #a61b3a !important;
+  color: #a61b3a !important;
+  outline-color: rgb(166, 0, 0) !important;
+}
+.ez-btn-stroke-red:hover,
+.ez-btn-stroke-red:active {
+  color: rgb(166, 27, 58) !important;
+  border-color: rgb(166, 27, 58) !important;
+}
+.ez-btn-flat-red {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #a61b3a !important;
+  outline-color: rgb(166, 0, 0) !important;
+}
+.ez-btn-flat-red:hover,
+.ez-btn-flat-red:active {
+  color: rgb(166, 27, 58) !important;
+}
