@@ -1,0 +1,50 @@
+.btn {
+  border: 1px solid transparent !important;
+  border-radius: 0.25rem !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  user-select: none !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5rem !important;
+}
+.btn:disabled,
+.btn-disabled {
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+}
+.btn-block {
+  display: block !important;
+  width: 100% !important;
+}
+.btn-radius-sm {
+  border-radius: 0.125rem !important;
+}
+.btn-radius-md {
+  border-radius: 0.25rem !important;
+}
+.btn-radius-lg {
+  border-radius: 0.375rem !important;
+}
+.btn-radius-rounded {
+  border-radius: 9999px !important;
+}
+.btn-sm {
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.75rem !important;
+  line-height: 1.25rem !important;
+}
+.btn-md {
+  padding: 0.375rem 0.75rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5rem !important;
+}
+.btn-lg {
+  padding: 0.5rem 1rem !important;
+  font-size: 1rem !important;
+  line-height: 1.75rem !important;
+}

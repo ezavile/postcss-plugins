@@ -1,0 +1,28 @@
+.ez-btn {
+  text-align: center !important;
+  text-transform: uppercase !important;
+  color: #000 !important;
+}
+.ez-btn:disabled,
+.ez-btn-disabled {
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+}
+.ez-btn-block {
+  display: block !important;
+  width: 100% !important;
+}
+.ez-btn-radius-small {
+  border-radius: 0.2rem !important;
+}
+.ez-btn-radius-large {
+  border-radius: 1rem !important;
+}
+.ez-btn-small {
+  padding: 0.2rem !important;
+  font-size: 0.7rem !important;
+}
+.ez-btn-large {
+  padding: 1rem !important;
+  font-size: 1rem !important;
+}
