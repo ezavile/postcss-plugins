@@ -7,18 +7,22 @@ import { TokenUtilityProps } from '../model';
 
 import plugin from '../plugin';
 
-function toExpect(
+async function toExpect(
   opts: Partial<TokenUtilityProps>,
   input: string,
   output: string
 ) {
-  const result = postcss([plugin(opts)]).process(input, { from: '/test.css' });
+  const result = await postcss([plugin(opts)]).process(input, {
+    from: '/test.css',
+  });
+
   const formatted = prettier.format(result.css, {
     tabWidth: 2,
     singleQuote: true,
     parser: 'css',
   });
-  expect(formatted).toEqual(output);
+
+  expect(formatted).toContain(output);
 }
 
 function getOutput(file: string) {
@@ -27,8 +31,8 @@ function getOutput(file: string) {
 }
 
 describe('postcss-token-utility', () => {
-  it('adds prefix to colors tokens utilities', () => {
-    toExpect(
+  it('adds prefix to colors tokens utilities', async () => {
+    await toExpect(
       {
         prefix: 'ez',
         colors: {
@@ -42,8 +46,8 @@ describe('postcss-token-utility', () => {
     );
   });
 
-  it('adds spacing tokens utilities', () => {
-    toExpect(
+  it('adds spacing tokens utilities', async () => {
+    await toExpect(
       {
         spacing: {
           '1x': '8px',
@@ -55,8 +59,8 @@ describe('postcss-token-utility', () => {
     );
   });
 
-  it('adds font tokens utilities', () => {
-    toExpect(
+  it('adds font tokens utilities', async () => {
+    await toExpect(
       {
         prefix: 'ez',
         font: {
@@ -75,8 +79,8 @@ describe('postcss-token-utility', () => {
     );
   });
 
-  it('adds leading tokens utilities', () => {
-    toExpect(
+  it('adds leading tokens utilities', async () => {
+    await toExpect(
       {
         leading: {
           '1x': '1.2',
@@ -86,6 +90,21 @@ describe('postcss-token-utility', () => {
       },
       `.custom-class { line-height: $leading-3x; }`,
       getOutput('leading.css')
+    );
+  });
+
+  it('adds buttons appearance utilities', async () => {
+    await toExpect(
+      {
+        prefix: 'ez',
+        colors: {
+          'red-50': '#ec1b49',
+          'green-50': '#14d0a6',
+          'blue-50': '#0056ff',
+        },
+      },
+      '',
+      getOutput('buttons.css')
     );
   });
 });

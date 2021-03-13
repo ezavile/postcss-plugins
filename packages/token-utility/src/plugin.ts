@@ -1,5 +1,6 @@
 import * as postcss from 'postcss';
 import vars from 'postcss-simple-vars';
+import buttonBuilder from '@postcss-plugins/button-builder';
 
 import { TokenUtilityProps } from './model';
 
@@ -12,7 +13,7 @@ const plugin = ({
 }: Partial<TokenUtilityProps>): postcss.Plugin => {
   return {
     postcssPlugin: 'postcss-token-utility',
-    OnceExit: (root: postcss.Root, helpers) => {
+    OnceExit: async (root: postcss.Root, helpers) => {
       const base = `${prefix ? `${prefix}-` : ''}`;
       const variables: { [key in string]: string } = {};
 
@@ -106,8 +107,12 @@ const plugin = ({
 
       root.prepend(...utils, spacingUtils);
 
-      const processor = helpers.postcss([vars({ variables })]);
-      processor.process(root).root;
+      const processor = helpers.postcss([
+        vars({ variables }),
+        buttonBuilder({ prefix, colors }),
+      ]);
+
+      await processor.process(root, { from: undefined });
 
       root.cleanRaws();
     },
