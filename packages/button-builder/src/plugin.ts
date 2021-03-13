@@ -54,12 +54,13 @@ const plugin = ({
 
       const appearancesRules = Object.keys(colors)
         .map((key) => ({
-          color: key,
+          colorKey: key,
+          color: colors[key],
           ...getAppearances(colors[key]),
         }))
-        .flatMap(({ color, ...appearances }) =>
+        .flatMap(({ colorKey, color, ...appearances }) =>
           Object.keys(appearances).map((appearance) => {
-            const baseSelector = `${basePrefix}-${appearance}-${color}`;
+            const baseSelector = `${basePrefix}-${appearance}-${colorKey}`;
             const { initial, hover } = appearances[appearance as Appearance];
 
             return [

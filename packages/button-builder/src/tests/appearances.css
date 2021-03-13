@@ -48,43 +48,43 @@
   font-size: 1rem !important;
   line-height: 1.75rem !important;
 }
-.ez-btn-solid-red {
+.ez-btn-solid-red-50 {
   background-color: #a61b3a !important;
-  outline-color: rgb(166, 0, 0) !important;
+  outline-color: rgb(166, 27, 58) !important;
 }
-.ez-btn-solid-red:hover,
-.ez-btn-solid-red:active {
+.ez-btn-solid-red-50:hover,
+.ez-btn-solid-red-50:active {
   background-color: rgb(166, 27, 58) !important;
 }
-.ez-btn-outline-red {
+.ez-btn-outline-red-50 {
   background-color: transparent !important;
   border-color: #a61b3a !important;
   color: #a61b3a !important;
-  outline-color: rgb(166, 0, 0) !important;
+  outline-color: rgb(166, 27, 58) !important;
 }
-.ez-btn-outline-red:hover,
-.ez-btn-outline-red:active {
+.ez-btn-outline-red-50:hover,
+.ez-btn-outline-red-50:active {
   background-color: #a61b3a !important;
   color: #fff !important;
 }
-.ez-btn-stroke-red {
+.ez-btn-stroke-red-50 {
   background-color: transparent !important;
   border-color: #a61b3a !important;
   color: #a61b3a !important;
-  outline-color: rgb(166, 0, 0) !important;
+  outline-color: rgb(166, 27, 58) !important;
 }
-.ez-btn-stroke-red:hover,
-.ez-btn-stroke-red:active {
+.ez-btn-stroke-red-50:hover,
+.ez-btn-stroke-red-50:active {
   color: rgb(166, 27, 58) !important;
   border-color: rgb(166, 27, 58) !important;
 }
-.ez-btn-flat-red {
+.ez-btn-flat-red-50 {
   background-color: transparent !important;
   border-color: transparent !important;
   color: #a61b3a !important;
-  outline-color: rgb(166, 0, 0) !important;
+  outline-color: rgb(166, 27, 58) !important;
 }
-.ez-btn-flat-red:hover,
-.ez-btn-flat-red:active {
+.ez-btn-flat-red-50:hover,
+.ez-btn-flat-red-50:active {
   color: rgb(166, 27, 58) !important;
 }

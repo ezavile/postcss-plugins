@@ -69,7 +69,7 @@ describe('postcss-button-builder', () => {
       {
         prefix: 'ez',
         colors: {
-          red: '#a61b3a',
+          'red-50': '#a61b3a',
         },
       },
       getOutput('appearances.css')
