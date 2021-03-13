@@ -12,7 +12,7 @@ yarn add @postcss-plugins/token-utility
 
 ## Usage
 
-This plugin generates utility classes and variables based on key-value pair tokens.
+This plugin generates utility classes and variables based on key-value pair tokens. Also we have integrated [@postcss-plugins/button-builder](https://github.com/ezavile/postcss-plugins/tree/master/packages/button-builder) to generate utility classes for `solid`, `outline`, `stroke` and `flat` button appearances.
 
 ```javascript
 const tokenUtilityPlugin = require('@postcss-plugins/token-utility');
@@ -48,109 +48,84 @@ postcss([
 ]);
 ```
 
-And the plugin will give you:
+And the plugin will give utilities:
 
-```css
-.ez-text-red-50 {
-  color: #ec1b49 !important;
-}
-.ez-text-green-50 {
-  color: #14d0a6 !important;
-}
-.ez-text-blue-50 {
-  color: #0056ff !important;
-}
-.ez-bg-red-50 {
-  background-color: #ec1b49 !important;
-}
-.ez-bg-green-50 {
-  background-color: #14d0a6 !important;
-}
-.ez-bg-blue-50 {
-  background-color: #0056ff !important;
-}
-.ez-text-small {
-  font-size: 12px !important;
-}
-.ez-text-medium {
-  font-size: 14px !important;
-}
-.ez-text-large {
-  font-size: 16px !important;
-}
-.ez-font-main {
-  font-family: 'roboto' !important;
-}
-.ez-leading-1x {
-  line-height: 1.2 !important;
-}
-.ez-leading-2x {
-  line-height: 1.5 !important;
-}
-.ez-leading-3x {
-  line-height: 1.7 !important;
-}
-.ez-m-1x {
-  margin: 8px !important;
-}
-.ez-p-1x {
-  padding: 8px !important;
-}
-.ez-mt-1x {
-  margin-top: 8px !important;
-}
-.ez-pt-1x {
-  padding-top: 8px !important;
-}
-.ez-mr-1x {
-  margin-right: 8px !important;
-}
-.ez-pr-1x {
-  padding-right: 8px !important;
-}
-.ez-mb-1x {
-  margin-bottom: 8px !important;
-}
-.ez-pb-1x {
-  padding-bottom: 8px !important;
-}
-.ez-ml-1x {
-  margin-left: 8px !important;
-}
-.ez-pl-1x {
-  padding-left: 8px !important;
-}
-.ez-m-2x {
-  margin: 12px !important;
-}
-.ez-p-2x {
-  padding: 12px !important;
-}
-.ez-mt-2x {
-  margin-top: 12px !important;
-}
-.ez-pt-2x {
-  padding-top: 12px !important;
-}
-.ez-mr-2x {
-  margin-right: 12px !important;
-}
-.ez-pr-2x {
-  padding-right: 12px !important;
-}
-.ez-mb-2x {
-  margin-bottom: 12px !important;
-}
-.ez-pb-2x {
-  padding-bottom: 12px !important;
-}
-.ez-ml-2x {
-  margin-left: 12px !important;
-}
-.ez-pl-2x {
-  padding-left: 12px !important;
-}
-```
+**color**
+
+- `.ez-text-red-50`
+- `.ez-text-green-50`
+- `.ez-text-blue-50`
+
+**background-color**
+
+- `.ez-bg-red-50`
+- `.ez-bg-green-50`
+- `.ez-bg-blue-50`
+
+**font-size**
+
+- `.ez-text-small`
+- `.ez-text-medium`
+- `.ez-text-large`
+
+**font-family**
+
+- `.ez-font-main`
+
+**line-height**
+
+- `.ez-leading-1x`
+- `.ez-leading-2x`
+- `.ez-leading-3x`
+
+**margin and padding**
+
+- `.ez-m-1x`
+- `.ez-p-1x`
+- `.ez-mt-1x`
+- `.ez-pt-1x`
+- `.ez-mr-1x`
+- `.ez-pr-1x`
+- `.ez-mb-1x`
+- `.ez-pb-1x`
+- `.ez-ml-1x`
+- `.ez-pl-1x`
+- `.ez-m-2x`
+- `.ez-p-2x`
+- `.ez-mt-2x`
+- `.ez-pt-2x`
+- `.ez-mr-2x`
+- `.ez-pr-2x`
+- `.ez-mb-2x`
+- `.ez-pb-2x`
+- `.ez-ml-2x`
+- `.ez-pl-2x`
+
+**Button Styles**
+
+- `.ez-btn`
+- `.ez-btn-block`
+- `.ez-btn-disabled`
+
+For radius:
+
+- `.ez-btn-radius-sm`
+- `.ez-btn-radius-md`
+- `.ez-btn-radius-lg`
+- `.ez-btn-radius-rounded`
+
+For sizes:
+
+- `.ez-btn-sm`
+- `.ez-btn-md`
+- `.ez-btn-lg`
+
+For appearances:
+
+- `.ez-btn-solid-red-50`
+- `.ez-btn-outline-red-50`
+- `.ez-btn-stroke-red-50`
+- `.ez-btn-flat-red-50`
 
 ### Naming Convention
 
