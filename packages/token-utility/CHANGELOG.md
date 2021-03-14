@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/ezavile/postcss-plugins/compare/@postcss-plugins/token-utility@0.1.3...@postcss-plugins/token-utility@0.2.0) (2021-03-14)
+
+
+### Features
+
+* **token-utility:** :sparkles: add button styles utilities ([adc14dc](https://github.com/ezavile/postcss-plugins/commit/adc14dc96a55be3b409d58398266df4c299c9cdc))
+
+
+
+
+
 ## [0.1.3](https://github.com/ezavile/postcss-plugins/compare/@postcss-plugins/token-utility@0.1.2...@postcss-plugins/token-utility@0.1.3) (2021-03-09)
 
 

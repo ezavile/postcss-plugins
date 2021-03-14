@@ -1,6 +1,6 @@
 {
   "name": "@postcss-plugins/token-utility",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A PostCSS plugin to generate design tokens utilities.",
   "license": "MIT",
   "repository": {
